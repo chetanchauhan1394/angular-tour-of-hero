@@ -10,7 +10,7 @@ export class MessageService {
   constructor() {}
 
   add(message: string) {
-    // console.log("messages==>", this.messages);
+    console.log("messages==>", this.messages);
     
     this.messages.push(message);
   }
