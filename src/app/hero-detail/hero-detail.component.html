@@ -1,9 +1,9 @@
 <div *ngIf="hero">
   <h2 class="text-danger mx-5">{{ hero.name }} Details</h2>
   <div class="d-flex flex-row justify-content-center w-auto">
-    <div class="w-25 ">
-      <div class="d-flex flex-row justify-content-center ">
-        <div class="text-end w-25 ">
+    <div class="w-25">
+      <div class="d-flex flex-row justify-content-center">
+        <div class="text-end w-25">
           <label>Id: </label>
         </div>
         <div class="text-start w-50 px-2">
@@ -23,9 +23,14 @@
           />
         </div>
       </div>
-      <button class="btn btn-danger text-danger" (click)="goBack()">
-        go back
-      </button>
+      <div class="d-flex justify-content-between px-md-5">
+        <button class="btn btn-danger text-danger" (click)="goBack()">
+         Go Back
+        </button>
+        <button class="btn btn-primary text-primary" (click)="save()">
+          Save
+        </button>
+      </div>
     </div>
   </div>
 </div>
