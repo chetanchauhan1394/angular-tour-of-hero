@@ -1,0 +1,14 @@
+<h2>My Heroes</h2>
+<div class="text-center d-flex flex-row justify-content-center">
+  <ul class="heroes">
+    <li
+      *ngFor="let hero of heroes">
+      <a style="text-decoration: none; color: black" routerLink="/detail/{{hero.id}}">
+        <span class="badge">{{ hero.id }}</span>
+        <span>{{ hero.name }}</span>
+      </a>
+    </li>
+  </ul>
+
+</div>
+<!-- <app-hero-detail [hero]="selectedHero"></app-hero-detail> -->
